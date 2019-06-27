@@ -8,7 +8,6 @@ namespace XFShellFlyoutSample.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CalendarPage : ContentPage
 	{
-        private Image TitleImage;
         public CalendarPage()
         {
             InitializeComponent();
