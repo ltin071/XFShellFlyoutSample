@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="XFShellFlyoutSample.View.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:XFShellFlyoutSample.View">
+    <FlyoutItem Title="Sample" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Todo" Icon="Check_POS.png">
+            <ShellContent Title="Todo" ContentTemplate="{DataTemplate views:TodoListPage}" />
+            <ShellContent Title="Completed" ContentTemplate="{DataTemplate views:TodoListCompletePage}" />
+        </Tab>
+        <ShellContent
+            Title="Calendar"
+            ContentTemplate="{DataTemplate views:CalendarPage}"
+            Icon="Calendar_POS.png" />
+        <ShellContent
+            Title="Notifications"
+            ContentTemplate="{DataTemplate views:NotificationsPage}"
+            Icon="Commenting_POS.png" />
+        <ShellContent
+            Title="Settings"
+            ContentTemplate="{DataTemplate views:SettingsPage}"
+            Icon="Cog_POS.png" />
+    </FlyoutItem>
+</Shell>
